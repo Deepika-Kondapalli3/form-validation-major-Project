@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/e0367bab23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="card p-3">
+            <form id="addUserForm">
+                <h1 class="form-heading text-center">Employee Form</h1>
+                <div class="form-group">
+                    <label for="name"><i class="fa-solid fa-user icon"></i>Name</label>
+                    <input type="text" class="form-control input" id="name" placeholder="Enter Your Full Name" />
+                    <p id="nameErrMsg" class="errorMessage"></p>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fa-solid fa-envelope icon"></i>Email</label>
+                    <input type="text" class="form-control input" id="email" placeholder="Enter Valid Email Address" />
+                    <p id="emailErrMsg" class="errorMessage"></p>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><i class="fa-solid fa-phone icon"></i>Phone Number</label>
+                    <input type="text" class="form-control input" id="phone" placeholder="Enter valid 10 digit number" />
+                    <p id="phoneErrMsg" class="errorMessage"></p>
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class="fa-solid fa-lock icon"></i>Password</label>
+                    <input type="password" class="form-control input" id="password" />
+                    <p id="passwordErrMsg" class="errorMessage"></p>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword"><i class="fa-solid fa-check icon"></i>Confirm Password</label>
+                    <input type="password" class="form-control input" id="confirmPassword" />
+                    <p id="confirmPasswordErrMsg" class="errorMessage"></p>
+                </div>
+                <div class="form-group">
+                    <label for="status"><i class="fa-solid fa-briefcase icon"></i>Working Status</label>
+                    <select id="status" class="form-control input">
+                        <option value="Active" selected>Active</option>
+                        <option value="InActive">In Active</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h1 class="gender-field-heading"><i class="fa-solid fa-venus-mars icon"></i>Gender</h1>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male" checked />
+                        <label class="form-check-label" for="genderMale">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female" />
+                        <label class="form-check-label" for="genderFemale">Female</label>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </form>
+            <div id="successMessage" class="d-none">
+                <h2>Your Details Submitted Successfully!</h2>
+                <img src="https://png.pngitem.com/pimgs/s/144-1449392_true-false-icon-png-transparent-png.png" class="success-image" />
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
